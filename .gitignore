@@ -1,5 +1,4 @@
 .gradle
-/libs/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###

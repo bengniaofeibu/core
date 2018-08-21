@@ -1,5 +1,5 @@
 .gradle
-
+/build/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -27,3 +27,4 @@
 src/main/java/com/jiujiu/core/
 src/main/java/com/jiujiu/util/
 src/test/
+build/

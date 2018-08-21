@@ -6,12 +6,13 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
+		classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
 
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 

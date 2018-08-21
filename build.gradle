@@ -1,12 +1,14 @@
 buildscript {
 	ext {
 		springBootVersion = '2.0.4.RELEASE'
+		maven = '1.5.8.RELEASE'
 	}
 	repositories {
 		mavenCentral()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.springframework.boot:spring-boot-maven-plugin:${maven}")
 	}
 }
 
@@ -28,4 +30,5 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
 }

@@ -1,23 +1,22 @@
 buildscript {
 	ext {
 		springBootVersion = '2.0.4.RELEASE'
-		maven = '1.5.8.RELEASE'
 	}
 	repositories {
 		mavenCentral()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 	}
 }
 
 apply plugin: 'java'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.jiujiu'
+group='com.github.tong_hengzhen@163.com'
+group = 'core'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -30,5 +29,4 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-
 }
